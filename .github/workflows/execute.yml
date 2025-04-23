@@ -22,12 +22,12 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'temurin'  # Use 'temurin' instead of 'adoptopenjdk'
+          distribution: 'temurin'
 
-      # Step 3: Compile Java code
+      # Step 3: Compile Java code (with correct path)
       - name: Compile Java code
-        run: javac DungeonDelvers.java
+        run: javac src/main/java/com/mycompany/dungeondelvers/DungeonDelvers.java
 
-      # Step 4: Run Java code
+      # Step 4: Run Java code (using classpath to handle packages)
       - name: Run Java code
-        run: java DungeonDelvers
+        run: java -cp src/main/java com.mycompany.dungeondelvers.DungeonDelvers
