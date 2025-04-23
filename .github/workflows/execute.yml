@@ -1,5 +1,4 @@
 name: Java Build and Test
-run: javac src/main/java/com/mycompany/dungeondelvers/*.java  # Compile all classes
 
 on:
   push:
@@ -25,10 +24,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Step 3: Compile Java code (with correct path)
-      - name: Compile Java code
-        run: javac src/main/java/com/mycompany/dungeondelvers/DungeonDelvers.java
+      # Step 3: Compile all Java files
+      - name: Compile Java files
+        run: javac src/main/java/com/mycompany/dungeondelvers/*.java
 
-      # Step 4: Run Java code (using classpath to handle packages)
-      - name: Run Java code
+      # Step 4: Run Java main class
+      - name: Run Java program
         run: java -cp src/main/java com.mycompany.dungeondelvers.DungeonDelvers
