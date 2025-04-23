@@ -26,8 +26,8 @@ jobs:
 
       # Step 3: Compile all Java files
       - name: Compile Java files
-        run: javac src/main/java/com/mycompany/dungeondelvers/*.java
+        run: echo "5" | java -cp src/main/java com.mycompany.dungeondelvers.DungeonDelvers
 
       # Step 4: Run Java main class
       - name: Run Java program
-        run: java -cp src/main/java com.mycompany.dungeondelvers.DungeonDelvers
+        run: echo "5" | java -cp src/main/java com.mycompany.dungeondelvers.DungeonDelvers
