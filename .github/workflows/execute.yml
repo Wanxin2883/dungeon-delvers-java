@@ -1,0 +1,19 @@
+name: Compile and Run Java
+
+on: [push, pull_request]
+
+jobs:
+  run-java:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: ☕ Compile Java Program
+        run: |
+          javac HelloWorld.java
+
+      - name: ▶️ Run Java Program
+        run: |
+          java HelloWorld
