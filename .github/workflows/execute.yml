@@ -1,4 +1,5 @@
 name: Java Build and Test
+run: javac src/main/java/com/mycompany/dungeondelvers/*.java  # Compile all classes
 
 on:
   push:
