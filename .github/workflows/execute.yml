@@ -24,4 +24,4 @@ jobs:
         run: javac -d out src/main/java/com/mycompany/dungeondelvers/*.java
 
       - name: Run Java program with input from file
-        run: java -cp out com.mycompany.dungeondelvers.DungeonDelvers < input.txt
+        run: java -cp out com.mycompany.dungeondelvers.DungeonDelvers < .github/workflows/input.txt
