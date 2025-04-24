@@ -28,30 +28,30 @@ jobs:
       - name: Run Java program with input
         run: |
           echo -e "5
-            1
-            Ali
-            M
-            1
-            Kelly
-            F
-            1
-            Wendy
-            F
-            3
-            4
-            1
-            1
-            1
-            5
-            1
-            5
-            1
-            5
-            1
-            5
-            1
-            5
-            2
-            5
-            1
-            6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
+          1
+          Ali
+          M
+          1
+          Kelly
+          F
+          1
+          Wendy
+          F
+          3
+          4
+          1
+          1
+          1
+          5
+          1
+          5
+          1
+          5
+          1
+          5
+          1
+          5
+          2
+          5
+          1
+          6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
