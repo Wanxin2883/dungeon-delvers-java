@@ -13,48 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code from the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Java with Adoptium (Temurin)
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # Step 3: Compile all Java files and output to 'out' folder
       - name: Compile Java files
         run: javac -d out src/main/java/com/mycompany/dungeondelvers/*.java
 
-      # Step 4: Run Java main class with multi-line input
       - name: Run Java program with input
         run: |
-          echo -e "5
-1
-Ali
-M
-1
-Kelly
-F
-1
-Wendy
-F
-3
-4
-1
-1
-5
-1
-5
-1
-5
-1
-5
-1
-5
-2
-5
-1
-6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
+          echo -e "5\n1\nAli\nM\n1\nKelly\nF\n1\nWendy\nF\n3\n4\n1\n1\n5\n1\n5\n1\n5\n1\n5\n1\n5\n2\n5\n1\n6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
