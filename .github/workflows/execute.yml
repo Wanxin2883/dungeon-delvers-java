@@ -38,9 +38,9 @@ jobs:
           Wendy
           F
           3
+          5
+          1
           4
           1
-          1
-          5
           1
           6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
