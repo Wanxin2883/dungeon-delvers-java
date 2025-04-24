@@ -2,11 +2,9 @@ name: Java Build and Test
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
@@ -25,22 +23,5 @@ jobs:
       - name: Compile Java files
         run: javac -d out src/main/java/com/mycompany/dungeondelvers/*.java
 
-      - name: Run Java program with input
-        run: |
-         echo -e "5
-          1
-          Ali
-          M
-          1
-          Kelly
-          F
-          1
-          Wendy
-          F
-          3
-          5
-          1
-          4
-          1
-          1
-          6" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers < input.txt
+      - name: Run Java program with input from file
+        run: java -cp out com.mycompany.dungeondelvers.DungeonDelvers < input.txt
