@@ -30,4 +30,4 @@ jobs:
 
       # Step 4: Run Java main class with input
       - name: Run Java program with input
-        run: echo -e "5\n1\nAli\nM\n1\nKelly\nF\n3\n4\n2\n1\n5\n1\n5\n1\n5\n1\n5\n1\n5\n2\n5\n1" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
+        run: echo -e "5\n1\nAli\nM\n1\nKelly\nF\n3\n4\n1\n1\n5\n1\n5\n1\n5\n1\n5\n1\n5\n2\n5\n1" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
