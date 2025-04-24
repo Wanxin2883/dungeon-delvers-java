@@ -30,4 +30,4 @@ jobs:
 
       # Step 4: Run Java main class with input
       - name: Run Java program with input
-        run: echo "3\n1" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
+        run: echo -e "3\n1" | java -cp out com.mycompany.dungeondelvers.DungeonDelvers
