@@ -49,7 +49,7 @@
 ## 👨‍💻 Author
 
 Created by Cheah Wan Xin 
-For learning purposes and showcasing OOP principles in Java.
+for learning purposes and showcasing OOP principles in Java.
 
 ---
 
