@@ -48,7 +48,7 @@
 
 ## 👨‍💻 Author
 
-Created by Cheah Wan Xin & Zoya Khan
+Created by **Cheah Wan Xin & Zoya Khan**
 for learning purposes and showcasing OOP principles in Java.
 
 ---
